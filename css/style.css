@@ -36,8 +36,8 @@ a:hover {
 }
 
 section {
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -73,12 +73,9 @@ section {
     background-color: var(--brand) !important; 
 }
 
-.owl-dot.active span{
-    background-color: var(--brand) !important;
-}
-
 .container{
     padding: 0;
+    margin-top: 0;
 }
 
  /* slide */
@@ -182,4 +179,29 @@ section {
     background: #000000;
     height: 500px;
     margin: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 460px;
+    background: #000000;
+    padding: 10px;
+    color: #fff;
+}
+footer ul{
+    list-style:none;
+    display: flex;
+}
+footer .footer-icons ul li{
+    width: 20px;
+    color: inherit;
+    color: #fff;
+}
+footer .copy ul li{
+    font-size: 13px;
+    padding: 10px;
+}
+
+footer .copy p{
+    font-size: 13px ;
 }
