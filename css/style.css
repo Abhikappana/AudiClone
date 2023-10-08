@@ -181,6 +181,115 @@ section {
     margin: 10px;
 }
 
+/* section carss  */
+.img-card{
+    position: relative;
+    max-width: 100%;
+    height:250px;
+    border-radius: 10px;
+    box-shadow:var(--box-shadow);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.img-card .info{
+    z-index: 777;
+    position: absolute;
+    top: 0;
+    left:0;
+    margin:20px;
+    color:#393939;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.img-card:hover .info{
+    transform:translateY(0);
+    opacity: 1;
+} 
+
+.img-card:hover .info h3{
+    font-size:2em;
+}
+.img-card:hover .info span{
+    font-size:1.2em;
+}
+
+.img-card img{
+    width:100%;
+    object-fit:cover;
+}
+.img-card img:hover{
+    transform: scale(1.1) ;
+    transition: .9s ease;
+}
+.cardetails{
+    z-index: 999999;
+    position:fixed;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: var(--bg-transparent-color);
+    backdrop-filter:blur(10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+    
+}
+
+.cardetails.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.carddetails-body{
+    position: sticky;
+    background: #262626;
+    color: #fff;
+    max-width: 600px;
+    margin:20px;
+    padding:40px;
+    border-radius:10px;
+    box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    transition: .5s ease;
+}
+.carddetails-body h3{
+    font-size: 4em;
+}
+
+.cardetails.active .carddetails-body{
+    transform: translateY(0);
+}
+
+.cardetails-close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin:20px;
+    cursor: pointer;
+    color: #fff;
+}
+/*==== e-tron hub==== */
+.section6{
+    min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+} 
+.etronbg{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/etronbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+/* ======footer===== */
 footer{
     width: 100%;
     height: 460px;
