@@ -229,8 +229,8 @@ section {
     opacity: 1;
 }
 
-.cardetails .carddetails-body{
-    position: sticky;
+.carddetails-body{
+    position:sticky;
     background: #262626;
     color: #fff;
     max-width: 600px;
