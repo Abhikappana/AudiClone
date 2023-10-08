@@ -3,8 +3,6 @@
 :root {
     --brand: #979797;
     --dark: #000000;
-    --body: #516171;
-    --border: rgba(0,0,0,0.08);
     --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -12,6 +10,7 @@ body {
     font-family: "Barlow", sans-serif;
     color: var(--body);
     line-height: 1.7;
+    overflow-x:hidden ;
 }
 
 
@@ -88,13 +87,13 @@ section {
 }
 
 .slide1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/Homebg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Homebg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .slide2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/homebg2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/homebg2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,6 +116,7 @@ section {
 }
 
 .navbar-brand {
+    padding: 10px;
     width:80px;
 }
 .navbar-brand img{
@@ -138,8 +138,8 @@ section {
     border: 0;
     color: #fff;
 }
-/* Section 2 */
 
+/* Section 2 */
 
 .info-box {
     color: #000000;
@@ -164,22 +164,6 @@ section {
 .service img {
     width: 100%;
     object-fit: cover;
-}
-
-.section4{
-    width:100%;
-    height:1050px;
-    background: #516171;
-}
-
-.section4 .col-lg-12{
-    background: red;
-    height: 1050px;
-}
-.section4 .col-lg-12 .row .col-lg-6{
-    background: #000000;
-    height: 500px;
-    margin: 10px;
 }
 
 /* section carss  */
@@ -238,7 +222,6 @@ section {
     visibility: hidden;
     opacity: 0;
     transition: .3s ease;
-    
 }
 
 .cardetails.active{
@@ -246,7 +229,7 @@ section {
     opacity: 1;
 }
 
-.carddetails-body{
+.cardetails .carddetails-body{
     position: sticky;
     background: #262626;
     color: #fff;
@@ -266,7 +249,7 @@ section {
     transform: translateY(0);
 }
 
-.cardetails-close-btn{
+.details-close-btn{
     position: absolute;
     top: 0;
     right: 0;
@@ -276,27 +259,46 @@ section {
 }
 
 /*========== etron======== */
-.etronbg .cards{
-    position: relative;
-    height:600px;
-    margin-bottom: 1px;
-    max-width: 100%;
-    height:250px;
+.container-fluid{
+    background: #9b9b9b;
+    padding: 10px;
 }
-.etronbg .cards img{
-    z-index: 0;
-    position: absolute;
-}
-.etronbg .cards h1{
-    position: absolute;
-    z-index: 999999;
+
+.container-fluid h1{
+    padding-left: 20px;
     color: #fff;
     
 }
-.etronbg .cards p{
+.cards{
+    position: relative;
+    object-fit: cover;
+}
+.cards img{
+    position: relative;
+    z-index: 0;
+}
+.card-info{
+    z-index: 777;
     position: absolute;
-    color: #fff;
-    z-index: 999999;
+    top: 0;
+    left:0;
+    margin:30px;
+    color:#fff
+}
+.card-info2 {
+    z-index: 777;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    padding: 50px;
+}
+
+.card-info h1{
+  font-size: 2.5em;
+}
+.card-info p{
+    font-size: 1.1em;
+    font-weight: 500;
 }
 /* ======footer===== */
 footer{
@@ -322,4 +324,9 @@ footer .copy ul li{
 
 footer .copy p{
     font-size: 13px ;
+}
+
+
+@media only screen and (max-width: 600px) {
+   nav
 }

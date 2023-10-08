@@ -12,7 +12,7 @@ imgCards.forEach((imgCard, i) =>{
     });
 });
 
-detailCloseBtns.forEach((detailsCloseBtn) =>{
+detailsCloseBtns.forEach((detailsCloseBtn) =>{
     detailsCloseBtn.addEventListener("click",() =>{
         carDetails.forEach((carDetailView) => {
             carDetailView.classList.remove("active");
