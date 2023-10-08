@@ -273,20 +273,10 @@ section {
     cursor: pointer;
     color: #fff;
 }
-/*==== e-tron hub==== */
-.section6{
-    min-height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: relative;
-} 
-.etronbg{
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/etronbg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+.etronbg img{
+    height: 600px;
+    margin-bottom: 1px;
+    object-fit: cover;
 }
 
 /* ======footer===== */
