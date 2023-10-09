@@ -1,3 +1,4 @@
+// 
 const carDetails =document.querySelectorAll(".cardetails");
 const imgCards =document.querySelectorAll(".img-card");
 const detailsCloseBtns =document.querySelectorAll(".details-close-btn");
