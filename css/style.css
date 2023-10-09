@@ -78,7 +78,7 @@ section {
 }
 
 .navbar{
-    max-width: 102%;
+    max-width: 100.5%;
 }
  /* slide */
  .slide {
@@ -94,18 +94,22 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 102%;
 }
 .slide2 {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/homebg2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 102%;
 }
 
 
 
 /* navbar */
-
+.navbar{
+    width: 101%;
+}
 .navbar .navbar-nav .nav-link {
     color: var(--dark);
 }
@@ -305,7 +309,7 @@ section {
 }
 /* ======footer===== */
 footer{
-    height: 300px;
+    height: 350px;
     background: #000000;
     padding: 10px;
     color: #fff;
@@ -334,7 +338,7 @@ footer .copy p{
     }
 
     .navbar{
-        width: 102%;
+        width: 100.5%;
     }
 
     
@@ -342,7 +346,7 @@ footer .copy p{
         padding: 50px;
     }
     .info h1{
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     .info a{
         font-size: 1em;
@@ -359,14 +363,15 @@ footer .copy p{
     }
     .card-info2 a{
         font-size: 1em;
+        padding-left: 40px;
     }
     .card-info h1{
        font-size: 1.6em;
     }
 
     footer{
-        min-width: 340px;
-        height: 400px;
+        width: 102%;
+        height: 350px;
         background: #000000;
         padding: 10px;
         color: #fff;
